@@ -1,0 +1,16 @@
+/usr/lib/librewolf/defaults/pref/autoconfig.js
+------------------------------------------------
+pref("general.config.filename", "autoconfig.cfg");
+pref("general.config.obscure_value", 0);
+pref("general.config.sandbox_enabled", false);
+
+
+/usr/lib/librewolf/autoconfig.cfg
+---------------------------------
+var {classes:Cc,interfaces:Ci,utils:Cu} = Components;
+/* set new tab page */
+try {
+  Cu.import("resource:///modules/AboutNewTab.jsm");
+  var newTabURL = "file:///home/dhruv/.config/startpage/dhruv/index.html";  
+  AboutNewTab.newTabURL = newTabURL;
+} catch(e){Cu.reportError(e);} // report errors in the Browser Console

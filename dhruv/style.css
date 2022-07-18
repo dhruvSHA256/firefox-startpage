@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --bg-dark: #20241F ;
+    --bg-dark2: #282828;
+    --bg-light2: #d4be98;
+    --fg-dark: #d4be98;
+    --fg-light: #6f798c;
+    --green: #a9b665;
+    --blue: #7daea3;
+    --red: #ea6962;
+    --yellow: #d8a657;
+    --link-hover-timing: all 0.25s ease-in-out;
+    --theme-change-timing: all 1s ease-in-out;
+    --fonts: 'Operator Mono Lig';
+}
+
+.dark {
+    background-color: var(--bg-dark);
+    color: var(--fg-dark);
+
+}
+
+.dark a, .dark a:visited {
+    color: var(--fg-dark);
+}
+
+.dark .container {
+    background-color: var(--bg-dark2);
+}
+
+body {
+    font-family: var(--fonts);
+    transition: all 0.5s ease
+}
+
+
+.dark button {
+    background-color: var(--yellow);
+    color: var(--bg-dark);
+}
+
+
+
+#box {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 3em;
+    margin: 2%;
+    height: 12em;
+    width: 10em;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover{
+    background-color: #2B2B29;
+}
+
+ul {
+    list-style-type:none;
+}
+
+li {
+    padding:1.5px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+header {
+    padding-bottom: 8px;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.social a:hover, .social header {
+    color: var(--red);
+}
+
+.dev a:hover, .dev header {
+    color: var(--yellow);
+}
+
+.misc a:hover, .misc header {
+    color: var(--green);
+}
+
+.other a:hover, .other header {
+    color: var(--blue);
+}
+
+/* @media (max-width:620px) { */
+/*     .container { */
+/*         padding: 2em; */
+/*         margin: 0; */
+/*     } */
+/* } */
