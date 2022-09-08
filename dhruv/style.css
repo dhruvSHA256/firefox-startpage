@@ -15,7 +15,7 @@
     --yellow: #d8a657;
     --link-hover-timing: all 0.25s ease-in-out;
     --theme-change-timing: all 1s ease-in-out;
-    --fonts: 'Operator Mono Lig';
+    --fonts: 'Iosevka';
 }
 
 .dark {
@@ -53,10 +53,10 @@ body {
 }
 
 .container {
-    padding: 3em;
-    margin: 2%;
-    height: 12em;
-    width: 10em;
+    padding: 30px;
+    margin: 15px;
+    height: 16em;
+    width: 14em;
     box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
 }
 
